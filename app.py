@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 BOT_TOKEN = "7319641531:AAFxJObCtITv4KuwJH4i26fGgzZI8J0SmEg"  # Gerçek token
-CHAT_ID = "269589680"  # Gerçek chat ID
+CHAT_ID = "-1002615913345"  # Gerçek chat ID
 
 @app.route('/', methods=["GET", "POST"])
 def webhook():
