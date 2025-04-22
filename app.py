@@ -12,7 +12,9 @@ def webhook():
         return "OK", 200
 
     data = request.get_json()
+    print(data)
     message = data.get("message", "Mesaj bulunamadı")
+    print(message)
     send_message_to_telegram(message)
     return {"status": "ok"}, 200
 
