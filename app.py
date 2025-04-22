@@ -25,4 +25,4 @@ def send_message_to_telegram(text):
     requests.post(url, json=payload)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=10000)
